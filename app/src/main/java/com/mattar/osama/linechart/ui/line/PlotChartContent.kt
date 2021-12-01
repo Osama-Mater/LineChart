@@ -82,9 +82,10 @@ internal fun PlotChartContent(lines: List<Point>, modifier: Modifier) {
                     ),
                 ),
                 modifier = modifier
+                    .wrapContentSize()
                     .fillMaxWidth()
-                    .height(200.dp)
-                    .padding(end = padding),
+                    .height(250.dp)
+                    .padding(bottom = padding, end = padding),
                 onSelectionStart = { visibility.value = true },
                 onSelectionEnd = { visibility.value = false }
             ) { x, pts ->
