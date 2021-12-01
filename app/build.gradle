@@ -60,7 +60,6 @@ dependencies {
 
     implementation 'androidx.activity:activity-compose:1.4.0'
 
-    implementation project(':lineplot')
     implementation project(':plotchart')
 
     testImplementation 'junit:junit:4.13.2'

@@ -14,11 +14,11 @@ import kotlin.math.roundToInt
 
 class SimpleYAxisDrawer(
     val labelTextSize: TextUnit = 12.sp,
-    val labelTextColor: Color = Color.Black,
+    val labelTextColor: Color = Color.Transparent,
     val drawLabelEvery: Int = 1,
     val labelValueFormatter: LabelFormatter = { value -> "%.1f".format(value) },
     val axisLineThickness: Dp = 1.dp,
-    val axisLineColor: Color = Color.Black,
+    val axisLineColor: Color = Color.Transparent,
 ) : IYAxisDrawer {
     private val mAxisLinePaint by lazy {
         Paint().apply {

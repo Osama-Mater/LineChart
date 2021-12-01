@@ -30,7 +30,6 @@ private fun HomeScreenContent() {
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally,
         ) {
-//            LineChartScreen()
             PlotChartScreen()
         }
     }
