@@ -87,7 +87,7 @@ data class LinePlot(
      * the 'start' [Offset] and 'end' [Offset]
      */
     data class Connection(
-        val connectionColor: Color = Color.Blue,
+        val connectionColor: Color = Color(red = 233, green = 99, blue = 55),
         val lineThickness: Dp = 3.dp,
         val cap: StrokeCap = Stroke.DefaultCap,
         val pathEffect: PathEffect? = null,
@@ -112,7 +112,7 @@ data class LinePlot(
 
             val mPaint by lazy {
                 Paint().apply {
-                    color = Color.Blue
+                    color = connectionColor
                     style = PaintingStyle.Stroke
                     isAntiAlias = true
                 }
@@ -143,7 +143,7 @@ data class LinePlot(
      * with the 'center' [Offset] and the actual [Point] that represents the intersection.
      */
     data class Intersection(
-        val color: Color = Color.Blue,
+        val color: Color = Color(red = 233, green = 99, blue = 55),
         val radius: Dp = 6.dp,
         val alpha: Float = 1.0f,
         val style: DrawStyle = Fill,
@@ -211,6 +211,6 @@ data class LinePlot(
             lineThickness = 2.dp,
             pathEffect = PathEffect.dashPathEffect(floatArrayOf(40f, 20f))
         ),
-        val detectionTime: Long = 100L,
+        val detectionTime: Long = 0L,
     )
 }
