@@ -34,7 +34,7 @@ internal fun PlotChartContent(lines: List<Point>, modifier: Modifier) {
         val points = remember { mutableStateOf(listOf<Point>()) }
         val density = LocalDensity.current
 
-        Box(Modifier.height(150.dp)) {
+        Box(Modifier.height(40.dp)) {
             if (visibility.value) {
                 Surface(
                     modifier = Modifier
