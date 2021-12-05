@@ -17,6 +17,7 @@ import androidx.compose.ui.unit.dp
 import com.mattar.osama.linechart.ui.line.LineChartDataModel
 import com.mattar.osama.linechart.ui.line.PlotChartScreen
 import com.mattar.osama.linechart.ui.theme.LineChartTheme
+import com.mattar.osama.linechart.ui.theme.sofiaFont
 
 @Composable
 fun HomeScreen() {
@@ -33,7 +34,7 @@ fun HomeScreen() {
 private fun HomeScreenContent() {
     Card(
         backgroundColor = Color.White,
-        border = BorderStroke(2.dp, Color.Black),
+        border = BorderStroke(2.dp, Color.White),
         elevation = 12.dp,
         modifier = Modifier
             .wrapContentSize()
@@ -51,7 +52,11 @@ private fun HomeScreenContent() {
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(16.dp),
-                text = LineChartDataModel.DataPoints.lastUpdated
+                text = LineChartDataModel.DataPoints.lastUpdated,
+                style = TextStyle(
+                    fontFamily = sofiaFont,
+                    fontWeight = FontWeight.Normal
+                )
             )
             Text(
                 modifier = Modifier
@@ -60,6 +65,7 @@ private fun HomeScreenContent() {
 
                 text = LineChartDataModel.DataPoints.currency,
                 style = TextStyle(
+                    fontFamily = sofiaFont,
                     fontWeight = FontWeight.Bold
                 )
             )
