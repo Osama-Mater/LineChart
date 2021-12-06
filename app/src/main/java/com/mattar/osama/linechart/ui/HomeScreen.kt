@@ -39,7 +39,7 @@ private fun HomeScreenContent() {
         modifier = Modifier
             .wrapContentSize()
             .fillMaxWidth()
-            .padding(16.dp)
+            .padding(8.dp)
     ) {
         Column(
             modifier = Modifier
@@ -51,7 +51,7 @@ private fun HomeScreenContent() {
             Text(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(16.dp),
+                    .padding(8.dp),
                 text = LineChartDataModel.DataPoints.lastUpdated,
                 style = TextStyle(
                     fontFamily = sofiaFont,
@@ -61,7 +61,7 @@ private fun HomeScreenContent() {
             Text(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(start = 16.dp),
+                    .padding(start = 8.dp),
 
                 text = LineChartDataModel.DataPoints.currency,
                 style = TextStyle(
